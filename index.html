@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata for the document -->
+    <meta charset="UTF-8" /> <!-- Character encoding set to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes the page responsive -->
+    <meta name="description" content="Provide your valuable feedback on our product quality, shipping speed, and website experience."> <!-- Page description for SEO -->
+    <title>Your Opinion Matters</title> <!-- Title of the page displayed in the browser tab -->
+    <link rel="icon" href="assets/Company Logo.png"> <!-- Favicon for the page -->
+    <link rel="stylesheet" href="main.css"> <!-- Link to the CSS file for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file, loaded after HTML is parsed -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Voice Your Experience</h1> <!-- Main heading of the page -->
+
+      <!-- Form for user feedback -->
+      <form action="https://sheetdb.io/api/v1/yy57fwits4akd" method="post" id="rating-form" onsubmit="myfunck(event)">
+        <label>Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required> <!-- Input for the user's name -->
+
+        <label>Email:</label>
+        <input type="email" id="email" name="email" placeholder="abc@example.com" required> <!-- Input for the user's email -->
+
+        <label>Client ID:</label>
+        <input type="number" id="client-id" name="clientid" placeholder="Your Unique ID" required> <!-- Input for the user's unique ID -->
+
+        <!-- Section for rating product quality -->
+        <div class="rating-Product-Quality">
+          <label>Product Quality:</label>
+          <label><input type="radio" name="quality" value="1" required> 1 - Terrible</label>
+          <label><input type="radio" name="quality" value="2"> 2 - Poor</label>
+          <label><input type="radio" name="quality" value="3"> 3 - Average</label>
+          <label><input type="radio" name="quality" value="4"> 4 - Good</label>
+          <label><input type="radio" name="quality" value="5"> 5 - Outstanding</label>
+        </div>
+
+        <!-- Section for rating shipping speed -->
+        <div class="rating-Shipping-Speed">
+          <label>Shipping Speed:</label>
+          <label><input type="radio" name="shipping" value="1" required> 1 - Very Slow</label>
+          <label><input type="radio" name="shipping" value="2"> 2 - Slow</label>
+          <label><input type="radio" name="shipping" value="3"> 3 - Okay</label>
+          <label><input type="radio" name="shipping" value="4"> 4 - Fast</label>
+          <label><input type="radio" name="shipping" value="5"> 5 - Lightning Fast</label>
+        </div>
+
+        <!-- Section for rating website experience -->
+        <div class="rating-Website-Experience">
+          <label>Website Experience:</label>
+          <label><input type="radio" name="website" value="1" required> 1 - Frustrating</label>
+          <label><input type="radio" name="website" value="2"> 2 - Needs Improvement</label>
+          <label><input type="radio" name="website" value="3"> 3 - Decent</label>
+          <label><input type="radio" name="website" value="4"> 4 - User-Friendly</label>
+          <label><input type="radio" name="website" value="5"> 5 - Seamless</label>
+        </div>
+        
+        <label for="comments">Any Suggestions or Comments?</label>
+        <textarea name="comments" id="comments" rows="4" placeholder="Please provide your feedback"></textarea> <!-- Textarea for additional comments -->
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">I consent to having my data stored for this project</label> <!-- Checkbox for user consent -->
+        </div>
+        
+        <button type="submit">Submit Your Experience</button> <!-- Submit button for the form -->
+      </form>
+    </div>
+  </body>
+</html>
